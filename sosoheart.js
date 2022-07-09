@@ -66,8 +66,6 @@ function entrouNoChatDaTwitch(endereco, porta) {
     console.log(`* Bot entrou no endereço ${endereco}:${porta}`);
 }
 
-// Registra as funções
 client.on('message', mensagemChegou);
 client.on('connected', entrouNoChatDaTwitch);
-// Connecta na Twitch:
 client.connect();
